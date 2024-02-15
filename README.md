@@ -1,5 +1,5 @@
-<h1 align="center">Hi there, I'm <a href="https://vk.com/zarter_dud" target="_blank">Andrey</a>
-<a href="https://vk.com/zarter_dud" target="_blank">Victoria</a>
+<h1 align="center">Hi there, I'm <a href="https://vk.com/zarter_dud" target="_blank">Andrey</a>,
+<a href="https://vk.com/zarter_dud" target="_blank">Victoria</a>,
 <a href="https://vk.com/zarter_dud" target="_blank">Nikita</a>
 </h1>
 <h3 align="center">School students from Russia</h3>
