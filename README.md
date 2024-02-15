@@ -16,11 +16,6 @@
 ```bash
 gh repo clone zarterdud/ingeners_future
 ```
-<p>or</p>
-
-```bash
-gh repo clone zarterdud/ingeners_future
-```
 
 2. Install dependencies
 
