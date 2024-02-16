@@ -14,42 +14,6 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>560</x>
-      <y>20</y>
-      <width>251</width>
-      <height>121</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_5">
-     <item>
-      <widget class="QLabel" name="text_len_3">
-       <property name="text">
-        <string>Загрузите картинку</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="add_picture">
-       <property name="text">
-        <string>Загрузить картинку</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="text_len_c_3">
-       <property name="text">
-        <string>Введите размер шаблона</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="len_char_3"/>
-     </item>
-    </layout>
-   </widget>
    <widget class="QWidget" name="layoutWidget_2">
     <property name="geometry">
      <rect>
@@ -63,7 +27,7 @@
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_5">
        <item>
-        <widget class="QPushButton" name="start_button_3">
+        <widget class="QPushButton" name="start_programm">
          <property name="text">
           <string>▶</string>
          </property>
@@ -94,13 +58,6 @@
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_6">
        <item>
-        <widget class="QLabel" name="text_count_3">
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item>
         <widget class="QLabel" name="text_rating_3">
          <property name="text">
           <string/>
@@ -109,29 +66,26 @@
        </item>
       </layout>
      </item>
-     <item>
-      <widget class="QTextBrowser" name="generations_field_3"/>
-     </item>
     </layout>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
       <x>620</x>
-      <y>220</y>
+      <y>250</y>
       <width>93</width>
       <height>71</height>
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Скачать</string>
     </property>
    </widget>
    <widget class="QLabel" name="text_len_c_4">
     <property name="geometry">
      <rect>
       <x>580</x>
-      <y>180</y>
+      <y>210</y>
       <width>191</width>
       <height>24</height>
      </rect>
@@ -139,6 +93,64 @@
     <property name="text">
      <string>Скачать полученную картинку</string>
     </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>21</y>
+      <width>271</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_7">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QLabel" name="text_len_3">
+         <property name="text">
+          <string>Загрузите картинку</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="add_picture">
+         <property name="text">
+          <string>Загрузить картинку</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="text_len_c_3">
+         <property name="text">
+          <string>Введите размер шаблона</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="len_template_X">
+         <property name="text">
+          <string>X:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="len_template_Y">
+         <property name="text">
+          <string>Y:</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="add_template">
+       <property name="text">
+        <string>Загрузить размеры</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
