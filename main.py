@@ -3,8 +3,8 @@ from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.QtGui import QPixmap
 from PyQt5 import QtWidgets
 from ui_form import Ui_MainWindow
-from add_to_bd import add_photo_to_bd, add_template
-from photo_editor import edit_photo
+from add_to_bd import add_photo_to_bd, add_template, take_values
+from template import start
 
 
 class FlagMaker(QMainWindow):
@@ -17,7 +17,9 @@ class FlagMaker(QMainWindow):
         self.ui.start_programm.clicked.connect(self.start_programm)
 
     def start_programm(self):
-        self.ui.text_rating_3.setPixmap(QPixmap(self.add_picture))
+        walues = take_values("14")[0]
+        picture = start(walues[0], walues[1])
+        self.ui.text_rating_3.setPixmap(QPixmap(picture))
 
     def resize_template(self):
         width = self.ui.len_template_X.text()
@@ -28,8 +30,7 @@ class FlagMaker(QMainWindow):
         self.add_picture = QtWidgets.QFileDialog.getOpenFileName(
             self, "Выбрать картинку", ""
         )[0].__str__()
-        photo = edit_photo(self.add_picture)
-        add_photo_to_bd(photo)
+        add_photo_to_bd(self.add_picture)
 
 
 if __name__ == "__main__":
