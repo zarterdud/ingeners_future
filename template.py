@@ -3,10 +3,8 @@ from random import choice
 from PIL import Image
 
 
-
-
 class OverlayImage:
-    def __init__(self, image_name):
+    def __init__(self, image_name, width, height):
         self.image = Image.open(image_name)
         self.width, self.height = self.image.size
         self.x, self.y = 0, 0
@@ -18,7 +16,7 @@ class OverlayImage:
         self.demo_image.paste(self.image, (0, 0), self.image)
         self.pixels = self.image.load()
         # создание матрицы с нулями
-        self.matrix = [[0] * self.width for _ in range(self.height)]
+        self.matrix = [[0] * width for _ in range(height)]
 
     def crop(self):
         image_square = 0
@@ -167,7 +165,7 @@ def start(name, size):
     WIDTH, HEIGHT = WIDTH_1, HEIGHT_1
     MAIN_IMAGE = MainImage(WIDTH, HEIGHT)
     for t in range(QUALITY):
-        OVER_IMAGE = OverlayImage(NAME)
+        OVER_IMAGE = OverlayImage(NAME, WIDTH, HEIGHT)
         OVER_IMAGE.crop()
         OVER_IMAGE.edit_random()
         OVER_IMAGE.create_matrix()
@@ -175,3 +173,6 @@ def start(name, size):
         datas = OVER_IMAGE.get_data()
         MAIN_IMAGE.add_images(datas)
         MAIN_IMAGE.save_rez()
+
+
+start("image.png", "(600, 600)")
