@@ -94,7 +94,7 @@
      <string>Скачать полученную картинку</string>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>560</x>
@@ -130,14 +130,14 @@
        <item>
         <widget class="QLineEdit" name="len_template_X">
          <property name="text">
-          <string>X:</string>
+          <string/>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QLineEdit" name="len_template_Y">
          <property name="text">
-          <string>Y:</string>
+          <string/>
          </property>
         </widget>
        </item>
